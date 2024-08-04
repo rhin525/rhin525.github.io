@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<head>
+<title>meiwrld</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+#more {display: none;}
+#info {display: none;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: url('images/cute-bg.jpeg');
+  
+  background-size: cover;
+  margin-left: 10%;
+  margin-right: 15%;
+
+}
+p {
+  size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+}
+.container {
+  width: 40%;
+  height: 410px;
+  align-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: dotted;
+  padding: 0;
+  background-color: rgba(127, 255, 212, 0.634);
+  text-align: center;
+  float:right;
+  margin-right: 15%;
+  margin-left: auto;
+  
+}
+.mini{
+  width: 23%;
+  height: 410px;
+  align-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: dotted;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.634);
+  float: left;
+  margin-left: 20%;
+  overflow: auto;
+}
+a{
+  text-decoration: none;
+}
+a span{
+    cursor: pointer;
+    transition: 0.5s;
+}
+a :hover{
+    color: rgb(65, 119, 165);
+    box-shadow: 100% black;
+}
+.column{
+  width: 61.75%;
+  column-width:auto;
+  height: min-content;
+  align-content: center;
+  column-count: 2;
+  column-gap: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-style: dotted;
+  column-rule-style: dotted;
+  column-rule-width: 3px;
+  column-rule-color: black;
+  padding: 15px;
+  background-color: rgba(240, 248, 255, 0.464);
+}
+.button{
+  background-color: aliceblue;
+  color: black;
+  border: 3px solid rgb(245, 127, 214);
+  display: block;
+  border-radius: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 15px;
+  height: auto;
+  width: auto;
+  
+}
+.button span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  box-shadow: 0 8px 16px 0 rgba(255, 251, 10), 0 6px 20px 0 rgba(255, 225, 0, 0.19);
+}
+button: :hover{
+    cursor: pointer;
+}
+.expand{
+  overflow: scroll;
+}
+h2{
+  
+  text-shadow: 100%;
+}
+header{
+  width: 61.75%;
+  padding: 15px;
+  background-color: rgba(127, 255, 212, 0.634);
+  border-style: dotted;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 15px;
+}
+.blog{
+  width: 61.75%;
+  height: 100px;
+  align-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: dotted;
+  padding: 15px;
+  background-color: rgba(240, 248, 255, 0.464);
+  overflow: hidden scroll;
+
+}
+img{
+  border-style: inset;
+}
+p.dotted {border-style: dotted;}
+p.ridge {border-style: ridge;}
+</style>
+</head>
+<header>
+
+
+    <h2>meiwrld.net ☆:.｡.o(≧▽≦)o.｡.:☆</h2>
+ 
+</header>
+<body>
+
+<div class="column">
+  <br></br>
+<a href="index.html">
+  <button class="button" style="vertical-align:middle">
+    <span>Home :3</span>
+  </button>
+</a>
+<a href="about.html">
+  <button class="button" style="vertical-align:middle">
+    <span>About :3</span>
+  </button>
+</a>
+<p> ┻━┻ ︵ ¯\ (ツ)/¯ ︵ ┻━┻</p>
+  <br></br>
+  <p>hi !! i'm mk and i'm a transfemme musician and artist who's released music over a few aliases over the years. i produce, mix, master [kinda], and i'm currently trying to pick up my guitar! my music taste is all over the place, which can be reflected in my experimentation with the hyperpop/digicore, edm, indie, and alt rock genres, among others. my sound is always evolving and improving, and i'm always starting new projects!</p>
+  
+</div>
+
+
+
+<div class="blog">
+<h3>List of Ongoing Music Projects:</i></h3>
+
+<a href="https://soundcloud.com/bunnybloodlust" target="_blank" rel="noopener noreferrer"><b>mei*3_OSC</b></a>
+
+<span id="dots"> </span><span id="more"> <br> >> a solo project for posting <br> experimental remixes and beats, <br> founded 2024. </span>
+
+<button onclick="fnTwo()" id="myBtn">Read more</button>
+<script>
+    function fnTwo() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none"){
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else{
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+
+<br></br>
+<a href="https://soundcloud.com/tgdne" target="_blank" rel="noopener noreferrer"><b>THIS GIRL DOES NOT EXIST</b></a>
+
+<span id="spc"> </span><span id="info"> <br> >> <i>an alternative rock/indie sleaze duo, <br> formed in 2024.</i></span>
+
+<button onclick="myFunction()" id="myButton">Read more</button>
+
+<script>
+function myFunction() {
+  var spc = document.getElementById("spc");
+  var info = document.getElementById("info");
+  var buttonText = document.getElementById("myButton");
+
+  if (spc.style.display === "none"){
+    spc.style.display = "inline";
+    buttonText.innerHTML = "Read more";
+    info.style.display = "none";
+  } else{
+    spc.style.display = "none";
+    buttonText.innerHTML = "Read less";
+    info.style.display = "inline";
+  }
+}
+</script>
+
+</div>
+
+<blockquote>A web<sub>site</sub><sub>..</sub></blockquote>
+
+</body>
+</html>
